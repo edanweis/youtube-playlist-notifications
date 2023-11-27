@@ -300,6 +300,7 @@ class YouTubeNotifier extends EventEmitter {
     }
 
     let vidId = body['yt:videoid'][0];
+    console.log(body)
     let publishTIme = new Date(body.published[0]);
     let updateTime = new Date(body.updated[0]);
 
